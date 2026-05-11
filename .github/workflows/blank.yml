@@ -11,5 +11,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Say Hello
-            run: echo "Hello, World! Working on feature branch"     
-            run: echo "Hello, my name is ${{ vars.MY_NAME }}, my password is ${{ vars.MY_PASSWORD }}!"
+              run: echo "Hello, World! Working on feature branch"     
+            - name: Say My Name
+              run: echo "Hello, my name is ${{ vars.MY_NAME }}, my password is ${{ vars.MY_PASSWORD }}!"
